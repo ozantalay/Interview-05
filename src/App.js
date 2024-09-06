@@ -44,14 +44,6 @@ function Modal({text}){
   const[expandedIndex,setExpandedIndex]=useState(null)
   const ref=useRef(null)
 
-
-  const handleclick=(index)=>{
-    setExpandedIndex(index)
-    }
-    const handleclose=()=>{
-      setExpandedIndex(null)
-      }
-
   const togleExpanded=(index)=>{
     if(expandedIndex===index){  
       setExpandedIndex(null)
